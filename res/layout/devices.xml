@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <TextView
+        android:id="@+id/installedApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:text="Device information"
+        android:textColor="@color/LightSalmon"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDeviceBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/installedApp"
+        android:layout_marginTop="14dp"
+        android:text="Device Brand"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvDeviceBrand"
+        android:layout_marginTop="16dp"
+        android:text="OS"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPlatform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvOS"
+        android:layout_marginTop="16dp"
+        android:text="Platform"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/tvzTAG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvPlatform"
+        android:layout_marginTop="16dp"
+        android:text="zTAG"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDateChkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvzTAG"
+        android:layout_marginTop="16dp"
+        android:text="Date Check Out"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+    
+    <Button
+        android:id="@+id/pickDateChkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDateChkOut"
+        android:layout_alignRight="@+id/etDateChkOut"
+        android:onClick="pickDateChkOut"
+        android:text="Get Date"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDateChkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvDateChkOut"
+        android:layout_marginTop="16dp"
+        android:text="Date Check In"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etDateChkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDateChkIn"
+        android:layout_alignBottom="@+id/etDateChkOut"
+        android:layout_alignLeft="@+id/etzTag"
+
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="date"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPersonChkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvDateChkIn"
+        android:layout_marginTop="16dp"
+        android:text="Person Check Out"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPersonChkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPersonChkOut"
+        android:layout_alignBottom="@+id/tvPersonChkOut"
+        android:layout_alignLeft="@+id/etzTag"
+        android:ems="10"
+        android:hint="Nat/Quilo"
+        android:inputType="textPersonName"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPersonChkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/installedApp"
+        android:layout_below="@+id/tvPersonChkOut"
+        android:layout_marginTop="16dp"
+        android:text="Person Check In"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPersonChkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPersonChkIn"
+        android:layout_alignBottom="@+id/tvPersonChkIn"
+        android:layout_alignLeft="@+id/etzTag"
+        android:ems="10"
+        android:hint="Nat/Quilo"
+        android:inputType="textPersonName"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPlatform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPlatform"
+        android:layout_alignBottom="@+id/tvzTAG"
+        android:layout_alignLeft="@+id/etOS"
+        android:ems="10"
+        android:hint="Android/iOS"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+    
+    <EditText
+        android:id="@+id/etzTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvzTAG"
+        android:layout_alignBottom="@+id/tvPlatform"
+        android:layout_alignLeft="@+id/etOS"
+        android:ems="10"
+        android:hint="ZML99999"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvOS"
+        android:layout_alignBottom="@+id/tvOS"
+        android:layout_alignLeft="@+id/etDeviceBrand"
+        android:ems="10"
+        android:hint="4.2.3"
+        android:inputType="numberDecimal"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etDeviceBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDeviceBrand"
+        android:layout_alignBottom="@+id/tvDeviceBrand"
+        android:layout_toRightOf="@+id/tvPersonChkOut"
+        android:ems="10"
+        android:hint="iPhone 5S/Galaxy S5"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDateInInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPersonChkIn"
+        android:layout_below="@+id/etPersonChkIn"
+        android:layout_marginTop="16dp"
+        android:text="Device First Invt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+    
+    <EditText
+        android:id="@+id/etDateInInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDateInInventory"
+        android:layout_alignBottom="@+id/etPersonChkIn"
+        android:layout_alignLeft="@+id/etzTag"
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="textPersonName"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/tvProDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPersonChkIn"
+        android:layout_below="@+id/tvDateInInventory"
+        android:layout_marginTop="16dp"
+        android:text="Provisioned Device"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+    
+    <EditText
+        android:id="@+id/etProDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvProDevice"
+        android:layout_alignBottom="@+id/etDateInInventory"
+        android:layout_alignLeft="@+id/etzTag"
+        android:ems="10"
+        android:hint="yes/no"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/addDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/updateDeviceInfo"
+        android:layout_alignBottom="@+id/updateDeviceInfo"
+        android:layout_alignParentLeft="true"
+        android:onClick="addDevice"
+        android:text="Add Device"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/updateDeviceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="updateDeviceInv"
+        android:text="Update Details"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etDateChkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDateChkOut"
+        android:layout_alignBottom="@+id/tvDateChkOut"
+        android:layout_alignLeft="@+id/etzTag"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="date"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/pickDateChkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDateChkIn"
+        android:layout_alignBottom="@+id/etDateChkIn"
+        android:layout_alignParentRight="true"
+        android:onClick="pickDateChkIn"
+        android:text="Get Date"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/pickDateDeviceIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDateInInventory"
+        android:layout_alignBottom="@+id/etDateInInventory"
+        android:layout_alignParentRight="true"
+        android:onClick="pickDateDeviceIn"
+        android:text="Get Date"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

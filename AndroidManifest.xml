@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comscience15.trackingdevices"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.comscience15.trackingdevices.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.comscience15.trackingdevices.DBAdapter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.comscience15.trackingdevices.DBADAPTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.comscience15.trackingdevices.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.comscience15.trackingdevices.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.comscience15.trackingdevices.Users"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.comscience15.trackingdevices.USERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.comscience15.trackingdevices.UserList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.comscience15.trackingdevices.USERLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.comscience15.trackingdevices.Devices"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.comscience15.trackingdevices.DEVICES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

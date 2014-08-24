@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"  >
+    
+	<TextView
+        android:id="@+id/empInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:text="Employee information"
+        android:textColor="@color/LightSalmon"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+	
+	<TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/empInfo"
+        android:layout_below="@+id/empInfo"
+        android:layout_marginTop="14dp"
+        android:text="First Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+
+	<EditText
+	    android:id="@+id/etFirstName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvFirstName"
+	    android:layout_alignBottom="@+id/tvFirstName"
+	    android:layout_alignParentRight="true"
+	    android:ems="10"
+	    android:hint="First Name"
+	    android:inputType="text"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+	
+	<TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFirstName"
+        android:layout_below="@+id/tvFirstName"
+        android:layout_marginTop="14dp"
+        android:text="Last Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+	
+	<EditText
+	    android:id="@+id/etLastName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvLastName"
+	    android:layout_alignBottom="@+id/tvLastName"
+	    android:layout_alignParentRight="true"
+	    android:ems="10"
+	    android:hint="Last Name"
+	    android:inputType="text"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+	
+	<TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvLastName"
+        android:layout_below="@+id/tvLastName"
+        android:layout_marginTop="14dp"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+	
+	<EditText
+	    android:id="@+id/etTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvTitle"
+	    android:layout_alignBottom="@+id/tvTitle"
+	    android:layout_alignParentRight="true"
+	    android:ems="10"
+	    android:hint="Title"
+	    android:inputType="text"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+	
+	<TextView
+        android:id="@+id/tvTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="14dp"
+        android:text="Team"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LightSalmon"
+        android:textSize="16sp" />
+	
+	<EditText
+	    android:id="@+id/etTeam"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvTeam"
+	    android:layout_alignBottom="@+id/tvTeam"
+	    android:layout_alignParentRight="true"
+	    android:ems="10"
+	    android:hint="Team"
+	    android:inputType="text"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+
+	<Button
+	    android:id="@+id/addUsers"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:onClick="addUsers"
+	    android:text="Add Employee"
+	    android:textColor="@android:color/white" />
+	
+	<Button
+	    android:id="@+id/updateEmpInfo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:onClick="updateEmpInv"
+	    android:text="Update Details"
+	    android:textColor="@android:color/white" />
+
+	
+    
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:text="Full Name:"/>
+    
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fullName"
+        android:textColor="@android:color/white"
+        android:text="Title:"/>
+    
+   <!--  <TextView
+        android:id="@+id/Devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Title"
+        android:textColor="@android:color/white"
+        android:text="Devices on Hand:"/> -->
+
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <!-- <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Devices"
+        android:layout_below="@+id/tt"
+        android:layout_alignLeft="@+id/tt"
+        android:text="TextView"
+        android:textColor="@android:color/white" /> -->
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Title"
+        android:layout_alignBottom="@+id/Title"
+        android:layout_alignLeft="@+id/fn"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

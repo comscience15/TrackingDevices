@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black" >
+    
+    <TextView
+	        android:id="@+id/empListTV"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/LightSalmon"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="14dp"
+	        android:text="List of Employees"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    <ListView
+	        android:id="@+id/usrList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:textColor="@android:color/white"
+	        android:layout_below="@+id/addEmp" />
+
+	    <EditText
+	        android:id="@+id/myFilter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Type here to filter..." 
+	        android:layout_below="@+id/empListTV" >
+
+	        <requestFocus />
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/addEmp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/myFilter"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/empListTV"
+	        android:onClick="addNEWEMPLOYEE"
+	        android:text="Add User"
+	        android:textColor="@android:color/white" />
+
+</RelativeLayout>
