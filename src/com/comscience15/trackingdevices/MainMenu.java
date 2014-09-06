@@ -119,7 +119,7 @@ public class MainMenu extends Activity{
 	// Open employees list and details
 	public void usersInventory(View V) {
 		//open Users class
-		Intent intent = new Intent(this, Users.class);
+		Intent intent = new Intent(this, UserList.class);
 		// open UserList class
 //		Intent intent = new Intent(this, UserList.class);
 		startActivity(intent);
